@@ -44,26 +44,59 @@ int main() {
 #include<stdio.h>
 
 int main(){
+    int opcao;
+        printf("Jogo de cartas\n");
+        printf("Bem-vindo ao jogo de cartas!\n");
+        printf("Menu\n");
+        printf("-------------------------\n");
+        printf("1 - Jogar\n");
+        printf("2 - Sair\n");
+        printf("3 - Criador\n");
+        printf("-------------------------\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+    switch (opcao){
+    {   // caso ele escolher outra coisa alem de 1, a variavel vai retorna 0 e vai parar de funcionar
+        case 1: // SE O USUARIO ESCOLHER A OPCAO 1, ELE VAI JOGAR 
+            printf("Voce escolheu jogar\n"); //
+            break;
+        case 2:// SE O USUARIO ESCOLHER A OPCAO 2, ELE VAI SAIR DO JOGO
+            // AQUI EU VOU SAIR DO JOGO
+            printf("Voce escolheu sair\n");
+            return 0;
+            case 3:// SE O USUARIO ESCOLHER A OPCAO 3, ELE VAI VER O CRIADOR DO JOGO
+            printf("Criador do jogo: \n");
+            printf("Eduardo \n");
+            return 0; 
+        default:// SE O USUARIO ESCOLHER UMA OPCAO INVALIDA, ELE VAI SAIR DO JOGO
+            printf("Opcao invalida\n");
+            return 1;
+    }
+ 
+
+    }
+    // AQUI EU VOU CRIAR AS VARIAVEIS QUE EU VOU USAR NO JOGO
     char estado, estado2;
     char cidade, cidade2;
     unsigned long populacao, populacao2;
     float area, area2;
     float pib, pib2;
     int pontos, pontos2;
+
     // CARTA 1 //
-    printf("CARTA 1\n");
-    printf("Digite o estado(A-H) da carta 1: \n");
-    scanf(" %c", &estado);
-    printf("Digite a cidade(1-4) da carta 1: ");
-    scanf(" %c", &cidade);
-    printf("Digite a populacao da carta 1: ");
-    scanf("%d", &populacao);
-    printf("Digite a area da carta 1: ");
-    scanf("%f", &area);
-    printf("Digite o pib da carta 1: ");
-    scanf("%f", &pib);
-    printf("Digite os pontos turisticos da carta 1: ");
-    scanf("%d", &pontos);
+        printf("CARTA 1\n");
+        printf("Digite o estado(A-H) da carta 1: \n");
+         scanf(" %c", &estado);
+        printf("Digite a cidade(1-4) da carta 1: ");
+         scanf(" %c", &cidade);
+        printf("Digite a populacao da carta 1: ");
+         scanf("%d", &populacao);
+        printf("Digite a area da carta 1: ");
+         scanf("%f", &area);
+        printf("Digite o pib da carta 1: ");
+         scanf("%f", &pib);
+        printf("Digite os pontos turisticos da carta 1: ");
+          scanf("%d", &pontos);
 
     // CARTA 2 //
     printf("CARTA 2\n");
